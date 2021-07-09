@@ -503,8 +503,14 @@ body{
     	font-size: 2em;
     }
     .mid_part{
-    	height: 180px;
+    	height:310px;
+		width: 120%;
+		
     }
+	
+	.mid_part img{
+		padding-right: -15em;
+	}
     .nav_content{
        position: absolute;
        width: 200px;
