@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HerpexMUSIC</title>
+	<link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#000000">
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/png" sizes="25x25" href="img/Herpex.png">
+</head>
+<body>
+
+	<div class="main">
+		<div class="progress_bar" id="Bar"></div>
+		<img src="bgg.jpg" alt="" id="bg">
+
+		<!-- navbar part -->
+		<div class="navbar">
+			<a href="#" id="logo"><i class='bx bxs-bar-chart-alt-2' ></i>&nbsp;Music</a>
+            <a onclick="open_close_menu()" id="responsive_menu"><i class='bx bxs-chevron-down' ></i></a>
+
+			<div class="nav_content">
+				<li><a href="#">Home</a></li>
+				<li><a href="#top_tracks">Tracks</a></li>
+				<li><a href="#user_comments">Comments</a></li>
+				<li><a href="mailto:herpex770@gmail.com">Contact</a></li>
+				<li><a href="#">start for free</a></li>
+			</div>
+
+            <a onclick="menu_action()" id="menu_btn"><i class='bx bx-menu-alt-left'></i></a>
+			<div class="side_menu">
+				<li><a href="https://mottakihajouni.netlify.app/" target="_blank"><i class='bx bx-user' title="Developer" alt="Developer"></i></a></li>
+				<li><a href="https://www.youtube.com/watch?v=tzug3Dm37NQ&list=PLgPXFH_SIl7AhYQRFiE3DFjMD9pMz7rDo" target="_blank"><i class='bx bxs-playlist'></i></a></li>
+				<li><a href="https://soundcloud.com/digitalstreams/sets/ilovehouse" target="_blank"><i class='bx bxl-soundcloud'></i></a></li>
+				<li><a href="mailto:nizar.hajjouni7@gmail.com"><i class='bx bxs-message-square-detail' title="Contact Developer"></i></a></li>
+				<li><a href="#"><i class='bx bx-merge'></i></a></li>
+				<li><a href="#"><i class='bx bxs-share'></i></a></li>
+			</div>
+		</div>
+        
+       <!--  mid part -->
+		<div class="mid_part">
+            <img src="img.png" alt="">
+
+			<div class="description">
+				<p id="A_name">Herpex Studios</p>
+				<p>co-founder - Manager</p>
+				<br>
+				<div class="author_desc">
+				   <p>It is a long established fact that a reader will be distracted the readable content of a page at layout.</p>
+				</div>
+                <audio id="audio1" src="songs/1.wav" ></audio>
+
+                 <div class="buttons">
+                   <button ><i class='bx bx-play' ></i></button>
+				   <button><i class='bx bxs-like' ></i></button>
+				   <button><i class='bx bx-share-alt'></i></button>
+				   <button><i class='bx bx-bookmark-alt'></i></button>
+                 </div>
+
+			</div>
+		</div>
+
+        <!-- tracks part -->
+		<div class="top_tracks" id="top_tracks">
+			<p id="heading"><i class='bx bxs-playlist'></i>&nbsp;&nbsp;Top Tracks</p>
+			<div id="track"></div>
+            <div id="track">
+				<img src="song_img/song_img3.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="songs/3.wav" id="music"></audio>
+
+				<div id="song_desc">
+					 <p>Herpex -Naruto Blue Bird</p>
+				     <p>Herpex Studios</p>
+				     <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+				     <p id="message">New</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="3.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+            <div id="track">
+				<img src="song_img/song_img2.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="songs/2.wav"  id="music"></audio>
+
+				<div id="song_desc">
+					<p>Herpex -Soolking Rockstar 2</p>
+				   <p>HerpexStudios</p>
+				   <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+				   <p id="message">New</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="songs/2.wav" target="_blank" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+			
+			<div id="track">
+				<img src="song_img/song_img1.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause"><i class='bx bx-play'></i></a>
+				</div>
+
+				<audio src="songs/1.wav" id="music"></audio>
+
+				<div id="song_desc">
+				   <p>Herpex -LIGHT</p>
+				   <p>HerpexStudios</p>
+				   <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+				   <p id="message">New</p>
+				</div>
+				<div id="actions_2">
+				  <p><a href="#"><i class='bx bx-share' ></i></a></p>
+				  <p><a href="songs/1.wav" target="_blank" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+			
+
+		
+
+			<div id="track">
+				<img src="song_img/song_img4.png" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="songs/4.mp3" id="music"></audio>
+
+				<div id="song_desc">
+					 <p>MCSBeats -insane</p>
+				     <p>MCSBeats</p>
+				     <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="4.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+			<div id="track">
+				<img src="song_img/song_img5.png" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="songs/5.mp3" id="music"></audio>
+
+				<div id="song_desc">
+					 <p>MCSBeats -feelIt</p>
+				     <p>MCSBeats</p>
+				     <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="5.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+		</div>
+
+        <!-- user comments part -->
+		<div class="user_comments" id="user_comments">
+			<p id="heading"><i class='bx bx-comment-detail'></i>&nbsp;&nbsp;Comments</p>
+            
+           <div class="comments">
+
+           	 <div class="comment">
+           	 	<div id="user_p">
+           	 		<p><i class='bx bx-user' ></i>&nbsp;&nbsp;d0wN</p>
+           	 		<p></p>
+           	 	</div>
+           	 	<div id="user_c">
+           	 		<p>7aja r3addddddddddddddd ya bro 
+                        TUTUTUTTU</p>
+           	 		<div id="social">
+           	 			<a><i class='bx bxl-facebook-circle' ></i></a>
+           	 			<a><i class='bx bxl-twitter' ></i></a>
+           	 		</div>
+           	 	</div>
+           	 </div>
+
+           	 <div class="comment">
+           	 	<div id="user_p">
+           	 		<p><i class='bx bx-user' ></i>&nbsp;&nbsp;2FA</p>
+           	 		<p></p>
+           	 	</div>
+           	 	<div id="user_c">
+           	 		<p>Nice 👌😍</p>
+           	 		<div id="social">
+           	 			<a><i class='bx bxl-facebook-circle' ></i></a>
+           	 			<a><i class='bx bxl-twitter' ></i></a>
+           	 		</div>
+           	 	</div>
+           	 </div>
+
+           	 <div class="comment">
+           	 	<div id="user_p">
+           	 		<p><i class='bx bx-user' ></i>&nbsp;&nbsp;Sarra Abdelkafi
+                        </p>
+           	 		<p></p>
+           	 	</div>
+           	 	<div id="user_c">
+           	 		<p>Gj sa7itt ❤️❤️❤️</p>
+           	 		<div id="social">
+           	 			<a><i class='bx bxl-facebook-circle' ></i></a>
+           	 			<a><i class='bx bxl-twitter' ></i></a>
+           	 		</div>
+           	 	</div>
+           	 </div>
+
+           	<div class="comment">
+           	 	<div id="user_p">
+           	 		<p><i class='bx bx-user' ></i>&nbsp;&nbsp;Tunisian Gods
+                        </p>
+           	 		<p></p>
+           	 	</div>
+           	 	<div id="user_c">
+           	 		<p>i need a piece of exta</p>
+           	 		<div id="social">
+           	 			<a><i class='bx bxl-facebook-circle' ></i></a>
+           	 			<a><i class='bx bxl-twitter' ></i></a>
+           	 		</div>
+           	 	</div>
+           	 </div>
+
+           </div>
+
+		</div>
+
+		<!-- popular creator part -->
+		<div class="popular_creator">
+           <p id="heading"><i class='bx bx-trophy' ></i>&nbsp;&nbsp;Popular Creator</p>
+            <div class="artists_list">
+
+            	<div class="artist">
+            		<img src="img/trapnation.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Trap Nation</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;30M+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>50M+</p>
+            		</div>
+            		
+            	</div>
+
+            	<div class="artist">
+            		<img src="img/ncs.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>NoCopyRightSounds</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;20M+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>30M+</p>
+            		</div>
+            	</div>
+
+            	<div class="artist">
+            		<img src="img/alanwalker.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>AlanWalker</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;20M+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>20M+</p>
+            		</div>
+            	</div>
+
+            	<div class="artist">
+            		<img src="img/cloudkid.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>CloudKid</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;500K+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>30K+</p>
+            		</div>
+            	</div>
+
+                <div class="artist">
+            		<img src="img/avicii.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Avicii</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;19M+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>500K+</p>
+            		</div>
+            	</div>
+
+                <div class="artist">
+            		<img src="img/martingarrix.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Martin Garrix</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;15M+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>10M+</p>
+            		</div>
+            	</div>
+
+            	<div class="artist">
+            		<img src="img/mcsbeats.png" alt="">
+            		<div class="artist_desc">
+            			<p>McsBeats</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;200+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>16+</p>
+            		</div>
+            	</div>
+
+            	
+
+            	
+
+            </div>
+		</div>
+
+        <!-- footer part -->
+		<div class="footer">
+			<a id="logo"><i class='bx bxs-bar-chart-alt-2' ></i>&nbsp;Our Social Media</a>
+			<div class="social_handle">
+				<a href="https://www.youtube.com/channel/UCOwmypwgnskYROzCR5L5FOg" target="_blank"><i class='bx bxl-youtube' ></i></a>
+				<a href="https://www.instagram.com/herpex1/" target="_blank"><i class='bx bxl-instagram'></i></a>
+			    <a href="https://soundcloud.com/user-637667227" target="_blank">	<i class='bx bxl-soundcloud' ></i></a>
+			</div>
+		</div>
+
+	</div>
+
+  <!-- javascript file -->
+  <script src="main.js"></script>
+</body>
+</html>
+
